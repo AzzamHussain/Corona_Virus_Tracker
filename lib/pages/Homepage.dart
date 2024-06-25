@@ -34,6 +34,17 @@ class _HomePageState extends State<HomePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Cases Reported in the World",
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    Padding(
                       padding: EdgeInsets.symmetric(vertical: 8.0),
                       child: Card(
                         child: Column(
