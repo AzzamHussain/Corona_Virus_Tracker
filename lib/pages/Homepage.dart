@@ -1,3 +1,4 @@
+import 'package:coronavirus/pages/search.dart';
 import 'package:coronavirus/pages/splashScreen.dart';
 import 'package:coronavirus/utilities/stats.dart';
 import 'package:flutter/material.dart';
@@ -69,7 +70,29 @@ class _HomePageState extends State<HomePage> {
                           ],
                         ),
                       ),
-                    )
+                    ),
+                    SizedBox(
+                      width: 200,
+                      height: 50,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Search()));
+                        },
+                        child: const Text(
+                          "countries",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
                   ],
                 );
               } else {
