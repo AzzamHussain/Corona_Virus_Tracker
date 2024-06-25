@@ -29,7 +29,7 @@ class _SearchState extends State<Search> {
                 _focusNode.unfocus();
               },
               child: TextField(
-                style: const TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.black),
                 onChanged: (value) {
                   setState(() {});
                 },
